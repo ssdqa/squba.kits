@@ -1,0 +1,28 @@
+Package: squba.kits
+Title: Pre-Assembled `squba` Analysis Kits
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Hanieh", "Razzaghi", email = "razzaghih@chop.edu", role = c("aut"),
+             comment = c(ORCID = "0000-0001-5001-1590")),
+      person("Kaleigh", "Wieand", email = "wieandk@chop.edu", role = c("aut", "cre"),
+             comment = c(ORCID = "0009-0003-7477-2601")),
+      person("Kimberley", "Dickinson", email = "dickinsokl@chop.edu", role = c("aut"),
+             comment = c(ORCID = "0000-0001-9523-056X")),
+      person("Charles", "Bailey", email = "baileyc@chop.edu", role = c("aut"),
+             comment = c(ORCID = "0000-0002-8967-0662")))
+Description: Each function in this package will execute a predetermined set of `squba` modules & checks
+  to jump start your data quality analysis. 
+License: MPL-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    argos,
+    cli (>= 3.6.3),
+    cohortattrition,
+    dplyr (>= 1.1.4),
+    expectedvariablespresent,
+    magrittr,
+    patientfacts,
+    stringr (>= 1.5.1)
+Remotes: ssdqa/cohortattrition, ssdqa/patientfacts, ssdqa/expectedvariablespresent, PEDSnet/argos
