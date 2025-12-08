@@ -106,8 +106,8 @@
 #' @importFrom dplyr filter
 #' @importFrom dplyr distinct
 #' @importFrom dplyr pull
+#' @importFrom dplyr ungroup
 #' @importFrom stringr str_c
-#'
 #'
 #' @export
 #'
