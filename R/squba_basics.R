@@ -222,7 +222,7 @@ squba_basics <- function(cohort,
                                                        evp_variable_file = evp_input %>%
                                                          filter(variable %in% evp_variable_filter))
 
-  result_list$`Expected Variables Present`[[3]] <- evp_anom_la
+  result_list$`Expected Variables Present`[[3]] <- evp_anom_la %>% ungroup()
   names(result_list$`Expected Variables Present`) <- c(name_build, name_build2, name_build3)
 
   ## Finish
