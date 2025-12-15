@@ -1,0 +1,9 @@
+url: https://ssdqa.github.io/squba.kits/
+template:
+  bootstrap: 5
+navbar:
+  left:
+  - text: 'squba Home'
+    href: https://ssdqa.github.io/squba/
+  - text: 'Reference'
+    href: reference/index.html

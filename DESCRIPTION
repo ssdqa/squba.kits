@@ -26,3 +26,4 @@ Imports:
     patientfacts,
     stringr (>= 1.5.1)
 Remotes: ssdqa/cohortattrition, ssdqa/patientfacts, ssdqa/expectedvariablespresent, PEDSnet/argos
+URL: https://ssdqa.github.io/squba.kits/

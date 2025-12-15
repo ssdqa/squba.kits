@@ -133,3 +133,36 @@ This analysis includes 3 modules and will execute 5 total checks:
 Note that single or multi-site selection is a global selection that will be controlled
 in the function parameters and be applied across all executions.
 }
+\examples{
+# Cohort Input
+my_cohort <- dplyr::tibble('site' = c('Site A', 'Site A', 'Site B'),
+                           'person_id' = c(1, 2, 3),
+                           'start_date' = c('2012-01-01', '2015-07-04',
+                                            '2014-12-31'),
+                           'end_date' = c('2018-01-01', '2020-07-04',
+                                          '2025-12-31'))
+
+# Attrition Input
+cohortattrition::sample_attrition
+
+# Expected Variables Present Input
+expectedvariablespresent::evp_variable_file_omop
+expectedvariablespresent::evp_variable_file_pcornet
+
+# Patient Facts Input
+patientfacts::pf_domain_file
+patientfacts::pf_visit_file_omop
+patientfacts::pf_visit_file_pcornet
+
+\dontrun{
+# Execute Function
+squba_basics(cohort = my_cohort,
+             omop_or_pcornet = 'omop' | 'pcornet',
+             multi_or_single_site = 'multi' | 'single',
+             ca_input = my_ca_file,
+             evp_input = my_evp_file,
+             pf_input = my_pf_domains,
+             pf_visits = my_pf_visits)
+}
+
+}
